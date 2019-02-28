@@ -1,0 +1,58 @@
+body {
+  background: purple;
+}
+
+h1 {
+  font-size: 500px;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+  }
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.column {
+  background: white;
+  padding: 20px;
+}
+
+.column + .column {
+  margin-top: 5%;
+}
+
+@media screen and (min-width: 1160px) {
+  .column {
+    width: 30%;
+    float: left;
+  }
+
+  .column + .column {
+    margin-left: 5%;
+    margin-top: 0;
+  }
+}
+
+.section-1,
+.section-2 {
+  background: black;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 50px;
+  width: 80%;
+}
+
+.section-2 {
+  background: yellow;
+}
